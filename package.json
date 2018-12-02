@@ -1,0 +1,20 @@
+{
+  "name": "global-load-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "global-load-test": "bin/cli.js"
+  },
+  "repository": "https://github.com/cagataygurturk/global-load-test",
+  "author": "Cagatay Gurturk <info@cagataygurturk.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.368.0",
+    "chalk": "^2.4.1",
+    "is-ip": "^2.0.0",
+    "meow": "^5.0.0",
+    "ora": "^3.0.0",
+    "valid-url": "^1.0.9"
+  }
+}
