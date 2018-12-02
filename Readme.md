@@ -75,6 +75,10 @@ global-load-test start --name my-global-load-test --url https://www.google.com -
 | medium 	| 99                   	| 150     	|
 | heavy  	| 199                  	| 315     	|
 
+### Monitor latency values
+
+This tool creates one Dashboard on Cloudwatch to show latencies reported by Route53 from different regions. Dashboard URL is shown when test is first created or can be manually accessed on Cloudwatch console.
+
 ### Stop a test
 
 To stop a test and clean up all health checks creates, use the following command:
@@ -82,3 +86,11 @@ To stop a test and clean up all health checks creates, use the following command
 ```
 global-load-test stop --name my-global-load-test
 ```
+
+## Authors
+
+* **Cagatay Gurturk** - [cagataygurturk](https://github.com/cagataygurturk)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
