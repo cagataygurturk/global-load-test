@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cagataygurturk/global-load-test.svg?branch=master)](https://travis-ci.org/cagataygurturk/global-load-test)
+
 # Global Load Test
 
 Global Load Test is a command line tool that allows its users to load test HTTP(S) endpoints from seven geographical different regions leveraging [AWS Route53 Health Checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html) against the endpoint and reports the latency from these regions. 

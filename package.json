@@ -6,6 +6,9 @@
   "bin": {
     "global-load-test": "bin/cli.js"
   },
+  "scripts": {
+    "test": "echo 'no test specified (yet)'"
+  },
   "repository": "https://github.com/cagataygurturk/global-load-test",
   "author": "Cagatay Gurturk <info@cagataygurturk.com>",
   "license": "MIT",
