@@ -1,6 +1,13 @@
 language: node_js
 node_js:
-  - "lts/*"
-
+- lts/*
 install:
-  - npm install
+- npm install
+deploy:
+  provider: npm
+  email: info@cagataygurturk.com
+  api_key:
+    secure: RQv9EHgbnlHlcqnK718Xnq5afdeIlCKeV9fzONko15u5BS5zRg3n8dwf/quKBFvLUIjDmMeWyd5wktdSofiJqQ5+vOVqqkM53FfQMb7BcVBpG36AdTkRpVQMpM67BNrc8BDoE26EOVJj1JpxrumE7DR2pCHpjLYAC5osYNnFg/EGdZhJj1k0bBmjPSP2KSTr6D8wDO5risceiFFYVuL2rxHJOX4qAfmHE73Utw3O0b81h5Obit1aDhRQypicVqet2hM/euZv4Mgo1II7wS5X18GyhZ/VhbidkjjBiy3bo18VLERZPMgNiOermAdep1CTZihlzMv42RwIxSmPCOq9brebGCJVFiDRWds6ixR1jOugLcHxt2NukasHGmU7UyI7SaMB5bcH737mRijCGTH2i4CrNa9t3pkwqAcVtd+u7rGd6M8DGZG4wN4CAmQoZMhNABOy9Vmo2PafRghwMbFEtEME5nx09RPN1EkD0m9k0zAvDI4ANOJ+WF1gICRTzRb6CyUXqVvUJvNR/44Rx2x8CzuMR5RBgMNItGgW/dC3o6ISJJDYYmlu70HOCstPDOW6fqVQbJZO5DC/VXof8xRS6AFf1hlNVTLz9jphnQrZhWMMBQz63zJGFBUU97fLKcMyvT3WE+lPktCMa9KGdeP8ZbxqMcOMyxiEs88TXJDDwQ0=
+  on:
+    tags: true
+    repo: cagataygurturk/global-load-test
