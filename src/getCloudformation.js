@@ -37,12 +37,10 @@ const checkParameters = (flags) => {
     }
 };
 
-const generateCloudformationByParameters = (flags) => {
+const generateCloudformationByParameters = (stackName,flags) => {
 
     checkParameters(flags);
     const {name, url, level} = flags;
-
-    const stackName = `global-load-test-${name}`;
 
     const stackBody = getSkeleton();
 

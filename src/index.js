@@ -14,10 +14,12 @@ const main = (cli) => {
     const command = cli.input[0];
 
     try {
-        const {stackName, stackBody, stackParameters} = getCloudformation(cli.flags);
+        const {name} = cli.flags;
+        const stackName = `global-load-test-${name}`;
 
         switch (command) {
             case 'start':
+                const {stackBody, stackParameters} = getCloudformation(stackName, cli.flags);
                 start(cloudformation, stackName, stackBody, stackParameters, cli.flags.name);
                 break;
             case 'stop':

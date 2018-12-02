@@ -27,7 +27,7 @@ const cli = meow(`
         level: {
             type: 'string',
             alias: 'l',
-            default: 'minimum'
+            default: 'light'
         }
     }
 });
