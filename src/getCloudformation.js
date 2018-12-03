@@ -109,7 +109,7 @@ const generateCloudformationByParameters = (stackName,flags) => {
     }
 
     stackBody.Parameters.P = {Type: 'String'};
-    stackParameters.P = parsedUrl.pathname + parsedUrl.search;
+    stackParameters.P = parsedUrl.pathname + (parsedUrl.search ? parsedUrl.search : "");
     healthCheckConfig.ResourcePath = {Ref: 'P'};
 
     for (let i = 1; i <= healthCheckCount; i++) {
