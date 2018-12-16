@@ -70,7 +70,6 @@ const generateCloudformationByParameters = (stackName,flags) => {
     const healthCheckCount = 199 * healthCheckPercentage / 100;
 
     const healthCheckConfig = {
-        EnableSNI: true,
         RequestInterval: 10
     };
 
@@ -86,6 +85,7 @@ const generateCloudformationByParameters = (stackName,flags) => {
             stackBody.Parameters.T = {Type: 'String'};
             stackParameters.T = 'HTTPS';
             healthCheckConfig.Type = {Ref: 'T'};
+            healthCheckConfig.EnableSNI = true;
             break;
         default:
             throw new Error('Invalid protocol. Only HTTP(S) domains are supported.');
